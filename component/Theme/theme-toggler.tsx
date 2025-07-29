@@ -2,9 +2,11 @@
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { motion } from "motion/react";
+
 export default function ThemeToggler() {
   const [isLight, setIsLight] = useState(false);
   const audioRef = useRef<HTMLAudioElement>(null);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const themeValue = localStorage.getItem("theme");
@@ -17,6 +19,18 @@ export default function ThemeToggler() {
       root.classList.remove("light");
       setIsLight(false);
     }
+
+    const checkDeviceSize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    checkDeviceSize();
+
+    window.addEventListener("resize", checkDeviceSize);
+
+    return () => {
+      window.removeEventListener("resize", checkDeviceSize);
+    };
   }, []);
 
   const themeToggler = () => {
@@ -25,6 +39,7 @@ export default function ThemeToggler() {
 
     if (audioRef.current) {
       audioRef.current.currentTime = 0;
+      audioRef.current.volume = 0.5;
       audioRef.current.play().catch((error) => {
         console.error("Error playing audio:", error);
       });
@@ -41,9 +56,11 @@ export default function ThemeToggler() {
     setIsLight(nextIsLight);
   };
 
+  const audioSrc = isMobile ? "/Audio/click.mp3" : "/Audio/click2.mp3";
+
   return (
     <button onClick={themeToggler}>
-      <audio ref={audioRef} src="/Audio/click2.mp3" preload="auto" />
+      <audio ref={audioRef} src={audioSrc} preload="auto" />
       <motion.div
         transition={{
           duration: 0.5,

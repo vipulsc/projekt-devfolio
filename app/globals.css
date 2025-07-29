@@ -1,13 +1,19 @@
 @import "tailwindcss";
 
 :root {
-  --background: #000000;
-  --foreground: #ffffff;
+  --background: #0d0d0d;
+  --foreground: #e5e7eb;
+  --navbar-bg: #262626;
+  --navbar-border: #404040;
+  --text-color: #f0f2f5;
 }
 
 .light {
-  --background: #ffffff;
-  --foreground: #000000;
+  --background: #f0f2f5;
+  --foreground: #111827;
+  --navbar-bg: #d1d9e0;
+  --navbar-border: #b3bfcc;
+  --text-color: #0d0d0d;
 }
 
 body {
