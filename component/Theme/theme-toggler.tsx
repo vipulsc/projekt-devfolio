@@ -2,24 +2,12 @@
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { motion } from "motion/react";
-
+import { useTheme } from "./theme-context";
 export default function ThemeToggler() {
-  const [isLight, setIsLight] = useState(false);
   const audioRef = useRef<HTMLAudioElement>(null);
   const [isMobile, setIsMobile] = useState(false);
-
+  const { isLight, toggleTheme } = useTheme();
   useEffect(() => {
-    const themeValue = localStorage.getItem("theme");
-    const root = document.documentElement;
-
-    if (themeValue === "light") {
-      root.classList.add("light");
-      setIsLight(true);
-    } else {
-      root.classList.remove("light");
-      setIsLight(false);
-    }
-
     const checkDeviceSize = () => {
       setIsMobile(window.innerWidth < 768);
     };
@@ -32,11 +20,7 @@ export default function ThemeToggler() {
       window.removeEventListener("resize", checkDeviceSize);
     };
   }, []);
-
-  const themeToggler = () => {
-    const root = document.documentElement;
-    const nextIsLight = !isLight;
-
+  const handleToggleTheme = () => {
     if (audioRef.current) {
       audioRef.current.currentTime = 0;
       audioRef.current.volume = 0.5;
@@ -44,22 +28,12 @@ export default function ThemeToggler() {
         console.error("Error playing audio:", error);
       });
     }
-
-    if (nextIsLight) {
-      root.classList.add("light");
-      localStorage.setItem("theme", "light");
-    } else {
-      root.classList.remove("light");
-      localStorage.setItem("theme", "dark");
-    }
-
-    setIsLight(nextIsLight);
+    toggleTheme();
   };
-
   const audioSrc = isMobile ? "/Audio/click.mp3" : "/Audio/click2.mp3";
 
   return (
-    <button onClick={themeToggler}>
+    <button onClick={handleToggleTheme}>
       <audio ref={audioRef} src={audioSrc} preload="auto" />
       <motion.div
         transition={{

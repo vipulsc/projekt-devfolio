@@ -5,7 +5,6 @@ import {
   FaFileLines,
 } from "react-icons/fa6";
 import Link from "next/link";
-import ThemeToggler from "../Theme/theme-toggler";
 export const Navbar = () => {
   return (
     <>

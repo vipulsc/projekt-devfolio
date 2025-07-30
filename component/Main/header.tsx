@@ -1,17 +1,8 @@
 "use client";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useTheme } from "../Theme/theme-context";
 export default function HeaderMain() {
-  const [isLight, setIsLight] = useState(false);
-
-  useEffect(() => {
-    const theme = localStorage.getItem("theme");
-    if (theme === "light") {
-      setIsLight(true);
-    } else {
-      setIsLight(false);
-    }
-  }, []);
+  const { isLight } = useTheme();
   return (
     <>
       <div className="flex flex-col justify-start items-start">
