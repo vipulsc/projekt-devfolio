@@ -70,7 +70,9 @@ export const Navbar = () => {
           {/* Hover Module */}
 
           <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-6 px-3 py-1 bg-[var(--navbar-bg)] border border-[var(--navbar-border)] rounded-lg text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none whitespace-nowrap z-20">
-            <span className="text-[var(--text-color)]">Resume</span>
+            <Link href="/vipulsc.pdf">
+              <span className="text-[var(--text-color)]">Resume</span>
+            </Link>
             <div className="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-[var(--navbar-border)]"></div>
           </div>
         </div>
