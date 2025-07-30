@@ -1,6 +1,7 @@
 import HeaderMain from "../Main/header";
 
-import PresenceAnimate from "../presence-animate";
+import PresenceAnimate from "../Animation/presence-animate";
+import About from "../Main/about";
 
 export default function Main() {
   return (
@@ -11,8 +12,11 @@ export default function Main() {
         </div>
       </div> */}
       <div className="w-full max-w-4xl mx-auto flex flex-col px-4 sm:px-6 md:px-8 lg:px-14 py-6 xl:py-0 transition-all duration-700 ease-in-out">
-        <PresenceAnimate delay={0.25}>
+        <PresenceAnimate delay={0.05}>
           <HeaderMain />
+        </PresenceAnimate>
+        <PresenceAnimate delay={0.1}>
+          <About />
         </PresenceAnimate>
         <br></br>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi tenetur

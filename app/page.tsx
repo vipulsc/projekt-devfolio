@@ -1,4 +1,4 @@
-import PawAnimation from "@/component/Fun/paw-animations";
+import PawAnimation from "@/component/Animation/paw-animations";
 import Main from "@/component/Layout/Main";
 import { Navbar } from "@/component/Navbar/navbar";
 import TopNavbar from "@/component/Navbar/top-navbar";
