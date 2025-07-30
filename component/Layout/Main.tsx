@@ -1,4 +1,4 @@
-import HeaderMain from "./header";
+import HeaderMain from "../Main/header";
 
 export default function Main() {
   return (

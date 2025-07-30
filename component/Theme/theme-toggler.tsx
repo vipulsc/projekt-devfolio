@@ -33,7 +33,7 @@ export default function ThemeToggler() {
   const audioSrc = isMobile ? "/Audio/click.mp3" : "/Audio/click2.mp3";
 
   return (
-    <button onClick={handleToggleTheme}>
+    <button onClick={handleToggleTheme} className="cursor-pointer">
       <audio ref={audioRef} src={audioSrc} preload="auto" />
       <motion.div
         transition={{
@@ -41,10 +41,10 @@ export default function ThemeToggler() {
           delay: 0.1,
         }}
         animate={{ rotate: isLight ? 0 : 180 }}
-        whileTap={{ rotate: isLight ? 180 : 0 }}
+        whileTap={{ rotate: isLight ? 240 : 0 }}
       >
         <Image
-          src={isLight ? "/moon-dark.svg" : "/sun-light.svg"}
+          src={isLight ? "/moondark.svg" : "/sunlight.svg"}
           height={40}
           width={40}
           alt="theme icon"
