@@ -70,7 +70,7 @@ export default function ThemeToggler() {
         whileTap={{ rotate: isLight ? 180 : 0 }}
       >
         <Image
-          src={isLight ? "/dark.svg" : "/light.svg"}
+          src={isLight ? "/moon-dark.svg" : "/sun-light.svg"}
           height={40}
           width={40}
           alt="theme icon"
