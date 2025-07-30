@@ -27,13 +27,13 @@ export default function PawAnimation() {
     <div className="fixed top-0 left-0 z-[9999] w-full h-full pointer-events-none">
       {/* Left side paws */}
       <div
-        className="absolute w-24 opacity-50 "
+        className="absolute w-24 opacity-50 hidden lg:block "
         style={{ left: -4, top: `10.5vh` }}
       >
         <Lottie lottieRef={leftTopRef} animationData={animation} loop />
       </div>
       <div
-        className="absolute w-24 opacity-30 "
+        className="absolute w-24 opacity-30 hidden lg:block "
         style={{ left: -4, top: `20.5vh` }}
       >
         <Lottie lottieRef={leftBottomRef} animationData={animation} loop />
@@ -41,13 +41,13 @@ export default function PawAnimation() {
 
       {/* Right side paws */}
       <div
-        className="absolute w-24 opacity-50 "
+        className="absolute w-24 opacity-50 hidden lg:block "
         style={{ right: -4, bottom: `10.5vh` }}
       >
         <Lottie lottieRef={rightTopRef} animationData={animation} loop />
       </div>
       <div
-        className="absolute w-24 opacity-30 "
+        className="absolute w-24 opacity-30 hidden lg:block"
         style={{ right: -4, bottom: `20.5vh` }}
       >
         <Lottie lottieRef={rightBottomRef} animationData={animation} loop />

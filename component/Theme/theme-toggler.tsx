@@ -45,8 +45,8 @@ export default function ThemeToggler() {
       >
         <Image
           src={isLight ? "/moondark.svg" : "/sunlight.svg"}
-          height={40}
-          width={40}
+          height={20}
+          width={20}
           alt="theme icon"
         />
       </motion.div>
