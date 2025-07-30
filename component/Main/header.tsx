@@ -57,7 +57,7 @@ export default function HeaderMain() {
               </div>
             </div>
             <p className="text-sm sm:text-base">
-              21, Mumbai | Full Stack Engineer
+              21, India | Full Stack Engineer
             </p>
           </div>
         </motion.div>
