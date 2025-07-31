@@ -7,6 +7,8 @@
   --navbar-border: #404040;
   --text-color: #f0f2f5;
   --available: #39ff14;
+  --skillbg: #18181b;
+  --skill-border: #3f3f46;
 }
 
 .light {
@@ -16,6 +18,8 @@
   --navbar-border: #b3bfcc;
   --text-color: #0d0d0d;
   --available: #008000;
+  --skillbg: #d3d3d3;
+  --skill-border: #c0c0c0;
 }
 
 /* body {

@@ -18,7 +18,7 @@ export default function HeaderMain() {
               transition={{ duration: 0.6, ease: "easeInOut" }}
             >
               <Image
-                src={isLight ? "/lightpfp.jpeg" : "/darkpfp.jpeg"}
+                src={isLight ? "/lightpfp.jpg" : "/darkpfp.jpg"}
                 alt="vipul"
                 width={130}
                 height={130}

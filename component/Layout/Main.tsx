@@ -2,6 +2,7 @@ import HeaderMain from "../Main/header";
 
 import PresenceAnimate from "../Animation/presence-animate";
 import About from "../Main/about";
+import SkillWrapper from "../Main/skill-wrapper";
 
 export default function Main() {
   return (
@@ -17,6 +18,9 @@ export default function Main() {
         </PresenceAnimate>
         <PresenceAnimate delay={0.1}>
           <About />
+        </PresenceAnimate>
+        <PresenceAnimate delay={0.1}>
+          <SkillWrapper />
         </PresenceAnimate>
         <br></br>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi tenetur
