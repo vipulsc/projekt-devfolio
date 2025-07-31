@@ -127,3 +127,18 @@ export const project: Project[] = [
     live: "https://xposed.sbs",
   },
 ];
+type Exp = {
+  companyName: string;
+  role: string;
+  start: Date;
+  end: Date;
+};
+
+export const experience: Exp[] = [
+  {
+    companyName: "Accenture",
+    role: "ASE Intern",
+    start: new Date("2025-05-01"),
+    end: new Date("2025-07-01"),
+  },
+];

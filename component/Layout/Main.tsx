@@ -4,6 +4,7 @@ import PresenceAnimate from "../Animation/presence-animate";
 import About from "../Main/about";
 import SkillWrapper from "../Main/skill-wrapper";
 import Projects from "../Main/projects";
+import Experience from "../Main/experience";
 
 export default function Main() {
   return (
@@ -26,72 +27,9 @@ export default function Main() {
         <PresenceAnimate delay={0.2}>
           <Projects />
         </PresenceAnimate>
-        <br></br>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi tenetur
-        consectetur ea commodi id. Repellat incidunt obcaecati modi maxime eum,
-        fugit cum pariatur beatae, architecto inventore animi, delectus
-        accusamus consequatur velit unde? Eum alias nulla incidunt rem nihil
-        eveniet temporibus reiciendis, eius illum magni labore dolorum
-        aspernatur vero enim consequuntur blanditiis distinctio consectetur,
-        nobis a minus atque, illo ratione ut et. Labore cumque dolor maiores
-        sint, libero nemo exercitationem quos blanditiis adipisci animi porro
-        itaque earum similique beatae ab pariatur asperiores quia praesentium
-        quisquam aliquid aperiam suscipit. Aut veniam beatae quis nam tempora.
-        Assumenda doloribus doloremque iste dignissimos suscipit repellendus.
-        <br></br>
-        <br></br>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi tenetur
-        consectetur ea commodi id. Repellat incidunt obcaecati modi maxime eum,
-        fugit cum pariatur beatae, architecto inventore animi, delectus
-        accusamus consequatur velit unde? Eum alias nulla incidunt rem nihil
-        eveniet temporibus reiciendis, eius illum magni labore dolorum
-        aspernatur vero enim consequuntur blanditiis distinctio consectetur,
-        nobis a minus atque, illo ratione ut et. Labore cumque dolor maiores
-        sint, libero nemo exercitationem quos blanditiis adipisci animi porro
-        itaque earum similique beatae ab pariatur asperiores quia praesentium
-        quisquam aliquid aperiam suscipit. Aut veniam beatae quis nam tempora.
-        Assumenda doloribus doloremque iste dignissimos suscipit repellendus.
-        <br></br>
-        <br></br>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi tenetur
-        consectetur ea commodi id. Repellat incidunt obcaecati modi maxime eum,
-        fugit cum pariatur beatae, architecto inventore animi, delectus
-        accusamus consequatur velit unde? Eum alias nulla incidunt rem nihil
-        eveniet temporibus reiciendis, eius illum magni labore dolorum
-        aspernatur vero enim consequuntur blanditiis distinctio consectetur,
-        nobis a minus atque, illo ratione ut et. Labore cumque dolor maiores
-        sint, libero nemo exercitationem quos blanditiis adipisci animi porro
-        itaque earum similique beatae ab pariatur asperiores quia praesentium
-        quisquam aliquid aperiam suscipit. Aut veniam beatae quis nam tempora.
-        Assumenda doloribus doloremque iste dignissimos suscipit repellendus.
-        <br></br>
-        <br></br>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi tenetur
-        consectetur ea commodi id. Repellat incidunt obcaecati modi maxime eum,
-        fugit cum pariatur beatae, architecto inventore animi, delectus
-        accusamus consequatur velit unde? Eum alias nulla incidunt rem nihil
-        eveniet temporibus reiciendis, eius illum magni labore dolorum
-        aspernatur vero enim consequuntur blanditiis distinctio consectetur,
-        nobis a minus atque, illo ratione ut et. Labore cumque dolor maiores
-        sint, libero nemo exercitationem quos blanditiis adipisci animi porro
-        itaque earum similique beatae ab pariatur asperiores quia praesentium
-        quisquam aliquid aperiam suscipit. Aut veniam beatae quis nam tempora.
-        Assumenda doloribus doloremque iste dignissimos suscipit repellendus.
-        <br></br>
-        <br></br>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi tenetur
-        consectetur ea commodi id. Repellat incidunt obcaecati modi maxime eum,
-        fugit cum pariatur beatae, architecto inventore animi, delectus
-        accusamus consequatur velit unde? Eum alias nulla incidunt rem nihil
-        eveniet temporibus reiciendis, eius illum magni labore dolorum
-        aspernatur vero enim consequuntur blanditiis distinctio consectetur,
-        nobis a minus atque, illo ratione ut et. Labore cumque dolor maiores
-        sint, libero nemo exercitationem quos blanditiis adipisci animi porro
-        itaque earum similique beatae ab pariatur asperiores quia praesentium
-        quisquam aliquid aperiam suscipit. Aut veniam beatae quis nam tempora.
-        Assumenda doloribus doloremque iste dignissimos suscipit repellendus.
-        <br></br>
-        <br></br>
+        <PresenceAnimate delay={0.25}>
+          <Experience />
+        </PresenceAnimate>
       </div>
     </>
   );
