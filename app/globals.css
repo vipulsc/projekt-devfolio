@@ -9,6 +9,9 @@
   --available: #39ff14;
   --skillbg: #18181b;
   --skill-border: #3f3f46;
+  --cardbg: #18181b;
+  --card-border: #3f3f46;
+  --construction: #cfff04;
 }
 
 .light {
@@ -20,6 +23,9 @@
   --available: #008000;
   --skillbg: #d3d3d3;
   --skill-border: #c0c0c0;
+  --cardbg: #d3d3d3;
+  --card-border: #c0c0c0;
+  --construction: #ff073a;
 }
 
 /* body {
