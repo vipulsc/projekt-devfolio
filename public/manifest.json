@@ -1,0 +1,155 @@
+{
+  "name": "Vipul Works - Full Stack Developer Portfolio",
+  "short_name": "Vipul Works",
+  "description": "Portfolio of Vipul Singh - Full Stack Developer specializing in React, Next.js, Node.js, and modern web technologies. Hire for web development services.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0d0d0d",
+  "theme_color": "#3b82f6",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en",
+  "categories": [
+    "productivity",
+    "business",
+    "technology",
+    "developer",
+    "portfolio"
+  ],
+  "icons": [
+    {
+      "src": "/icons/light-icon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/dark-icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/light-icon.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/dark-icon.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/light-icon.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/dark-icon.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/light-icon.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/dark-icon.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "https://res.cloudinary.com/du9tf43gi/image/upload/v1753989030/banner_e9bnfs.png",
+      "sizes": "1200x630",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Vipul Works Portfolio - Desktop View"
+    },
+    {
+      "src": "https://res.cloudinary.com/du9tf43gi/image/upload/v1753989030/banner_e9bnfs.png",
+      "sizes": "1200x630",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Vipul Works Portfolio - Mobile View"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "View Projects",
+      "short_name": "Projects",
+      "description": "Browse my latest web development projects",
+      "url": "/#projects",
+      "icons": [
+        {
+          "src": "/icons/light-icon.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "About Me",
+      "short_name": "About",
+      "description": "Learn more about my skills and experience",
+      "url": "/#about",
+      "icons": [
+        {
+          "src": "/icons/light-icon.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Download Resume",
+      "short_name": "Resume",
+      "description": "Download my professional resume",
+      "url": "/vipulsc.pdf",
+      "icons": [
+        {
+          "src": "/icons/light-icon.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Contact Me",
+      "short_name": "Contact",
+      "description": "Get in touch for collaboration",
+      "url": "mailto:vipul@vipulworks.com",
+      "icons": [
+        {
+          "src": "/icons/light-icon.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "related_applications": [
+    {
+      "platform": "webapp",
+      "url": "https://vipulworks.com"
+    }
+  ],
+  "prefer_related_applications": false,
+  "edge_side_panel": {
+    "preferred_width": 400
+  },
+  "launch_handler": {
+    "client_mode": "navigate-existing"
+  },
+  "handle_links": "preferred",
+  "protocol_handlers": [
+    {
+      "protocol": "mailto",
+      "url": "mailto:vipul@vipulworks.com"
+    }
+  ]
+}

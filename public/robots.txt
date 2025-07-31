@@ -1,0 +1,78 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://vipulworks.com/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /draft/
+
+# Allow important pages and assets
+Allow: /
+Allow: /about
+Allow: /projects
+Allow: /contact
+Allow: /services
+Allow: /blog
+Allow: /resume
+Allow: /portfolio
+
+# Allow static assets
+Allow: /images/
+Allow: /icons/
+Allow: /animations/
+Allow: /Projects/
+Allow: /Audio/
+
+# Specific bot instructions
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 2
+
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 2
+
+User-agent: YandexBot
+Allow: /
+Crawl-delay: 2
+
+User-agent: facebookexternalhit
+Allow: /
+Crawl-delay: 1
+
+User-agent: Twitterbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: LinkedInBot
+Allow: /
+Crawl-delay: 1
+
+User-agent: WhatsApp
+Allow: /
+Crawl-delay: 1
+
+User-agent: TelegramBot
+Allow: /
+Crawl-delay: 1 
