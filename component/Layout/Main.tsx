@@ -20,10 +20,10 @@ export default function Main() {
         <PresenceAnimate delay={0.1}>
           <About />
         </PresenceAnimate>
-        <PresenceAnimate delay={0.1}>
+        <PresenceAnimate delay={0.15}>
           <SkillWrapper />
         </PresenceAnimate>
-        <PresenceAnimate delay={0.1}>
+        <PresenceAnimate delay={0.2}>
           <Projects />
         </PresenceAnimate>
         <br></br>

@@ -12,9 +12,8 @@ export default function page() {
       <div className="pt-16">
         <Main />
       </div>
-      <nav className="fixed bottom-20 left-0 right-0 z-10 flex justify-center">
-        <Navbar />
-      </nav>
+
+      <Navbar />
 
       <div className="z-[9999] pointer-events-none">
         <PawAnimation />
