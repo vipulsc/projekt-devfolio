@@ -19,7 +19,7 @@ export default function CardWrapper({
   underdevelopment,
 }: CardProps) {
   return (
-    <div className="relative w-full bg-[var(--cardbg)] border border-[var(--card-border)] rounded-xl mb-8 overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out group">
+    <div className="relative w-full bg-[var(--cardbg)] border border-[var(--card-border)] rounded-xl mb-6 overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out group">
       <div className="absolute inset-0 z-0 flex items-center justify-center">
         <div className="absolute inset-0 backdrop-blur-[3px] bg-[var(--cardbg)]/10 rounded-xl pointer-events-none" />
       </div>
