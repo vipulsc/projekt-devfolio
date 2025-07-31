@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import ThemeProvider from "@/component/Theme/theme-context";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,12 +17,12 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://vipulworks.com"),
   title: {
-    default:
-      "Vipul Singh - Full Stack Developer & Software Engineer | vipulworks.com",
-    template: "%s | Vipul Singh - Full Stack Developer",
+    default: "Vipul Singh - Software Engineer",
+    template: "%s | Vipul Singh - Software Engineer",
   },
   description:
-    "Vipul Singh is a passionate Full Stack Developer specializing in React, Next.js, Node.js, and modern web technologies. View portfolio, projects, and hire for web development services.",
+    "Vipul Singh is a passionate Full Stack Developer specializing in React, Next.js, Node.js, and modern web technologies.",
+  applicationName: "Vipul Works",
   keywords: [
     "Full Stack Developer",
     "React Developer",
@@ -29,47 +30,13 @@ export const metadata: Metadata = {
     "Node.js Developer",
     "JavaScript Developer",
     "TypeScript Developer",
-    "MERN Stack Developer",
-    "Web Developer",
-    "Frontend Developer",
-    "Backend Developer",
     "Software Engineer",
-    "Web Development",
-    "React.js",
-    "Next.js",
-    "Node.js",
-    "MongoDB",
-    "Express.js",
-    "API Development",
-    "REST API",
-    "GraphQL",
-    "Database Design",
-    "PostgreSQL",
-    "MySQL",
-    "MongoDB",
-    "Redux",
-    "Context API",
-    "Tailwind CSS",
-    "Bootstrap",
-    "Git",
-    "GitHub",
-    "Docker",
-    "AWS",
-    "Vercel",
-    "Netlify",
-    "Responsive Design",
-    "Progressive Web Apps",
-    "vipulworks.com",
     "Vipul Singh",
-    "Portfolio",
-    "Freelance Developer",
-    "Hire Developer",
+    "vipulworks.com",
   ],
   authors: [{ name: "Vipul Singh", url: "https://vipulworks.com" }],
   creator: "Vipul Singh",
   publisher: "Vipul Singh",
-  category: "Technology",
-  classification: "Portfolio",
   referrer: "origin-when-cross-origin",
   formatDetection: {
     email: false,
@@ -77,52 +44,15 @@ export const metadata: Metadata = {
     telephone: false,
   },
   icons: {
-    icon: [
-      {
-        media: "(prefers-color-scheme: light)",
-        url: "/icons/light-icon.png",
-        type: "image/png",
-        sizes: "32x32",
-      },
-      {
-        media: "(prefers-color-scheme: dark)",
-        url: "/icons/dark-icon.png",
-        type: "image/png",
-        sizes: "32x32",
-      },
-    ],
-    shortcut: [
-      {
-        media: "(prefers-color-scheme: light)",
-        url: "/icons/light-icon.png",
-        type: "image/png",
-      },
-      {
-        media: "(prefers-color-scheme: dark)",
-        url: "/icons/dark-icon.png",
-        type: "image/png",
-      },
-    ],
-    apple: [
-      {
-        media: "(prefers-color-scheme: light)",
-        url: "/icons/light-icon.png",
-        type: "image/png",
-        sizes: "180x180",
-      },
-      {
-        media: "(prefers-color-scheme: dark)",
-        url: "/icons/dark-icon.png",
-        type: "image/png",
-        sizes: "180x180",
-      },
-    ],
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/icons/icon.png",
   },
   manifest: "/manifest.json",
   openGraph: {
-    title: "Vipul Singh - Full Stack Developer & Software Engineer",
+    title: "Vipul Singh - Software Engineer",
     description:
-      "Vipul Singh is a passionate Full Stack Developer specializing in React, Next.js, Node.js, and modern web technologies. View portfolio, projects, and hire for web development services.",
+      "Vipul Singh is a passionate Full Stack Developer specializing in React, Next.js, Node.js, and modern web technologies.",
     url: "https://vipulworks.com",
     siteName: "Vipul Works - Portfolio",
     images: [
@@ -139,9 +69,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Vipul Singh - Full Stack Developer & Software Engineer",
+    title: "Vipul Singh - Software Engineer",
     description:
-      "Vipul Singh is a passionate Full Stack Developer specializing in React, Next.js, Node.js, and modern web technologies. View portfolio, projects, and hire for web development services.",
+      "Vipul Singh is a passionate Full Stack Developer specializing in React, Next.js, Node.js, and modern web technologies.",
     images: [
       "https://res.cloudinary.com/du9tf43gi/image/upload/v1753989030/banner_e9bnfs.png",
     ],
@@ -161,7 +91,7 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: "your-google-verification-code",
+    google: "verified-via-dns",
     yandex: "your-yandex-verification-code",
     yahoo: "your-yahoo-verification-code",
   },
@@ -172,32 +102,20 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
       <head>
-        <meta
-          name="theme-color"
-          media="(prefers-color-scheme: light)"
-          content="#f0f2f5"
-        />
-        <meta
-          name="theme-color"
-          media="(prefers-color-scheme: dark)"
-          content="#0d0d0d"
-        />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, maximum-scale=5"
-        />
         <meta name="author" content="Vipul Singh" />
         <meta name="contact" content="vipul@vipulworks.com" />
         <meta name="geo.region" content="IN" />
         <meta name="geo.placename" content="India" />
         <meta name="geo.position" content="28.6139;77.2090" />
         <meta name="ICBM" content="28.6139, 77.2090" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="apple-touch-icon" href="/icons/icon.png" />
 
         {/* Structured Data for Person */}
         <script
@@ -241,7 +159,7 @@ export default function RootLayout({
           }}
         />
 
-        {/* Structured Data for WebSite */}
+        {/* Structured Data for Website */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -269,6 +187,20 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}
       >
         <ThemeProvider>{children}</ThemeProvider>
+
+        {/* Google Analytics */}
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-X0SELJMPNB"
+        />
+        <Script id="google-analytics">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-X0SELJMPNB');
+          `}
+        </Script>
       </body>
     </html>
   );
