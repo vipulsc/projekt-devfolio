@@ -116,6 +116,10 @@ const nextConfig: NextConfig = {
         source: "/android-chrome-:size(192x192|512x512).png",
         destination: "/favicon/android-chrome-:size.png",
       },
+      {
+        source: "/security-policy",
+        destination: "/security-policy.html",
+      },
     ];
   },
 

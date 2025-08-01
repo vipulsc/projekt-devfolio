@@ -170,6 +170,18 @@ export default function RootLayout({
         <meta name="format-detection" content="address=no" />
         <meta name="format-detection" content="email=no" />
 
+        {/* Content Security Policy */}
+        <meta
+          httpEquiv="Content-Security-Policy"
+          content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://va.vercel-scripts.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https: blob:; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://va.vercel-scripts.com; frame-src 'self' https://cal.com; object-src 'none'; base-uri 'self'; form-action 'self';"
+        />
+
+        {/* Viewport for better mobile experience */}
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"
+        />
+
         <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico" />
         <link
           rel="icon"
@@ -188,7 +200,7 @@ export default function RootLayout({
           sizes="180x180"
           href="/favicon/apple-touch-icon.png"
         />
-        <link rel="manifest" href="/public/manifest.json" />
+        <link rel="manifest" href="/manifest.json" />
         <link
           rel="icon"
           href="/icons/icon.png"
