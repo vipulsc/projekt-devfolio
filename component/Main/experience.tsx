@@ -6,8 +6,8 @@ function formatDate(date: Date): string {
 
 export default function Experience() {
   return (
-    <section className="py-10 px-4 md:px-8 max-w-4xl mx-auto relative">
-      <h1 className="text-xl font-bold mb-6">Experience.</h1>
+    <section className="py-10  max-w-4xl mx-auto relative">
+      <h1 className="text-xl font-bold mb-4">Experience.</h1>
       <div className="relative border border-[var(--cardbg)] p-6 rounded-xl">
         {/* Corner borders */}
         <div className="pointer-events-none absolute inset-0 transition animate-pulse">

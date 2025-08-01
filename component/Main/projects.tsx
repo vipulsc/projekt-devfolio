@@ -15,7 +15,7 @@ export default function Projects() {
   return (
     <div className="flex flex-col gap-3 pt-10">
       <div>
-        <h1 className="text-xl font-bold">Featured Projects.</h1>
+        <h1 className="text-xl font-bold mb-4">Featured Projects.</h1>
       </div>
 
       <div>

@@ -8,7 +8,8 @@ export default function SkillWrapper() {
 
   return (
     <>
-      <div className="flex flex-col gap-2">
+      <h1 className="text-xl font-bold mb-4 mt-4">Skills.</h1>
+      <div className="flex flex-col gap-2 ">
         <Reorder.Group
           axis="x"
           values={skillsList}
