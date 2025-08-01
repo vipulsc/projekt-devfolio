@@ -2,7 +2,7 @@ export default function About() {
   return (
     <>
       <div>
-        <h1 className="text-xl font-bold mb-4">About Me.</h1>
+        <h1 className="text-xl font-bold mb-2 mt-4">About Me.</h1>
         <p className="text-base pt-1">
           Hey! I&apos;m Vipul Singh, a full-stack engineer who loves crafting
           fast, scalable, and intuitive web experiences across the stack.
