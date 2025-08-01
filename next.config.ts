@@ -78,22 +78,6 @@ const nextConfig: NextConfig = {
           },
         ],
       },
-      // Additional favicon files
-      {
-        source: "/apple-touch-icon.png",
-        destination: "/favicon/apple-touch-icon.png",
-        headers: [],
-      },
-      {
-        source: "/site.webmanifest",
-        destination: "/favicon/site.webmanifest",
-        headers: [],
-      },
-      {
-        source: "/android-chrome-:size(192x192|512x512).png",
-        destination: "/favicon/android-chrome-:size.png",
-        headers: [],
-      },
     ];
   },
 
@@ -113,7 +97,7 @@ const nextConfig: NextConfig = {
     ];
   },
 
-  // Rewrites for better URL structure
+  // Rewrites for URL mapping
   async rewrites() {
     return [
       {
@@ -124,10 +108,22 @@ const nextConfig: NextConfig = {
         source: "/robots.txt",
         destination: "/api/robots",
       },
+      {
+        source: "/apple-touch-icon.png",
+        destination: "/favicon/apple-touch-icon.png",
+      },
+      {
+        source: "/site.webmanifest",
+        destination: "/favicon/site.webmanifest",
+      },
+      {
+        source: "/android-chrome-:size(192x192|512x512).png",
+        destination: "/favicon/android-chrome-:size.png",
+      },
     ];
   },
 
-  // Experimental features for better performance
+  // Experimental features
   experimental: {
     optimizePackageImports: ["react-icons", "lottie-react"],
   },
