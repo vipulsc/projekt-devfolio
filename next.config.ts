@@ -78,6 +78,22 @@ const nextConfig: NextConfig = {
           },
         ],
       },
+      // Additional favicon files
+      {
+        source: "/apple-touch-icon.png",
+        destination: "/favicon/apple-touch-icon.png",
+        headers: [],
+      },
+      {
+        source: "/site.webmanifest",
+        destination: "/favicon/site.webmanifest",
+        headers: [],
+      },
+      {
+        source: "/android-chrome-:size(192x192|512x512).png",
+        destination: "/favicon/android-chrome-:size.png",
+        headers: [],
+      },
     ];
   },
 

@@ -71,7 +71,7 @@ export const metadata: Metadata = {
       { url: "/icons/icon.png", sizes: "192x192", type: "image/png" },
       { url: "/icons/icon.png", sizes: "512x512", type: "image/png" },
     ],
-    shortcut: "/favicon.ico",
+    shortcut: "/favicon/favicon.ico",
     apple: "/icons/icon.png",
   },
   manifest: "/manifest.json",
@@ -170,7 +170,11 @@ export default function RootLayout({
         <meta name="format-detection" content="address=no" />
         <meta name="format-detection" content="email=no" />
 
-        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+        <link rel="manifest" href="/favicon/site.webmanifest" />
         <link
           rel="icon"
           href="/icons/icon.png"
