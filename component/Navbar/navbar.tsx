@@ -8,6 +8,7 @@ import {
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { useRef, useState } from "react";
+import { DragHint } from "./drag-hint";
 
 export const Navbar = () => {
   const constraintsRef = useRef(null);
@@ -15,6 +16,7 @@ export const Navbar = () => {
 
   return (
     <>
+      <DragHint />
       <div
         ref={constraintsRef}
         className="fixed inset-0 pointer-events-none z-50"
