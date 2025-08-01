@@ -6,37 +6,49 @@ function formatDate(date: Date): string {
 
 export default function Experience() {
   return (
-    <section className="py-10  max-w-4xl mx-auto relative">
-      <h1 className="text-xl font-bold mb-4">Experience.</h1>
+    <section className="py-12 w-full relative">
+      {/* Sleek Header */}
+      <div className="mb-4">
+        <h1 className="text-xl font-bold mb-1">Experience.</h1>
+        <div className="w-12 h-px bg-gradient-to-r from-muted-foreground/30 to-transparent"></div>
+      </div>
+
+      {/* Thin Card Container */}
       <div className="relative border border-[var(--cardbg)] p-6 rounded-xl">
-        {/* Corner borders */}
-        <div className="pointer-events-none absolute inset-0 transition animate-pulse">
+        {/* Thin Corner borders */}
+        <div className="pointer-events-none absolute inset-0">
           {/* Top-left */}
-          <div className="absolute top-0 left-0 w-6 h-6 border-t-4 border-l-4 border-[var(--card-border)] rounded-tl-xl" />
+          <div className="absolute top-0 left-0 w-6 h-6 border-t border-l border-[var(--card-border)]/40 rounded-tl-lg" />
           {/* Top-right */}
-          <div className="absolute top-0 right-0 w-6 h-6 border-t-4 border-r-4 border-[var(--card-border)] rounded-tr-xl" />
+          <div className="absolute top-0 right-0 w-6 h-6 border-t border-r border-[var(--card-border)]/40 rounded-tr-lg" />
           {/* Bottom-left */}
-          <div className="absolute bottom-0 left-0 w-6 h-6 border-b-4 border-l-4 border-[var(--card-border)] rounded-bl-xl" />
+          <div className="absolute bottom-0 left-0 w-6 h-6 border-b border-l border-[var(--card-border)]/40 rounded-bl-lg" />
           {/* Bottom-right */}
-          <div className="absolute bottom-0 right-0 w-6 h-6 border-b-4 border-r-4 border-[var(--card-border)] rounded-br-xl" />
+          <div className="absolute bottom-0 right-0 w-6 h-6 border-b border-r border-[var(--card-border)]/40 rounded-br-lg" />
         </div>
 
-        {/* Content */}
-
-        <div className="space-y-8">
+        {/* Clean Content */}
+        <div className="space-y-6 relative z-10">
           {experience.map((item, index) => (
             <div
               key={index}
-              className="flex justify-between items-start flex-wrap gap-y-1"
+              className="group hover:bg-muted-foreground/3 rounded-lg p-4 transition-all duration-200"
             >
-              <div>
-                <h1 className="text-2xl font-semibold">{item.companyName}</h1>
-                <p className="text-base text-muted-foreground">{item.role}</p>
-              </div>
+              <div className="flex justify-between items-start gap-4">
+                <div className="flex-1">
+                  <h2 className="text-xl font-semibold mb-1 group-hover:text-foreground/90 transition-colors duration-200">
+                    {item.companyName}
+                  </h2>
+                  <p className="text-sm text-muted-foreground">{item.role}</p>
+                </div>
 
-              <p className="text-sm text-muted-foreground">
-                {formatDate(item.start)} - {formatDate(item.end)}
-              </p>
+                <div className="flex items-center gap-1.5 px-3 py-1 bg-muted-foreground/8 rounded-md">
+                  <div className="w-1.5 h-1.5 bg-muted-foreground/30 rounded-full"></div>
+                  <p className="text-xs text-muted-foreground font-medium">
+                    {formatDate(item.start)} - {formatDate(item.end)}
+                  </p>
+                </div>
+              </div>
             </div>
           ))}
         </div>
