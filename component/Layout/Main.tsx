@@ -5,6 +5,7 @@ import About from "../Main/about";
 import SkillWrapper from "../Main/skill-wrapper";
 import Projects from "../Main/projects";
 import Experience from "../Main/experience";
+import Contact from "../Main/contact";
 
 export default function Main() {
   return (
@@ -29,6 +30,9 @@ export default function Main() {
         </PresenceAnimate>
         <PresenceAnimate delay={0.25}>
           <Experience />
+        </PresenceAnimate>
+        <PresenceAnimate delay={0.3}>
+          <Contact />
         </PresenceAnimate>
       </div>
     </>

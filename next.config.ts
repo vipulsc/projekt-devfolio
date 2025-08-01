@@ -113,10 +113,6 @@ const nextConfig: NextConfig = {
         destination: "/favicon/apple-touch-icon.png",
       },
       {
-        source: "/site.webmanifest",
-        destination: "/favicon/site.webmanifest",
-      },
-      {
         source: "/android-chrome-:size(192x192|512x512).png",
         destination: "/favicon/android-chrome-:size.png",
       },
