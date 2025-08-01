@@ -8,7 +8,7 @@ export default function About() {
           fast, scalable, and intuitive web experiences across the stack.
         </p>
         <p className="text-base pt-1">
-          Skilled in React, Next.js, Node.js, TypeScript, and PostgreSQL I
+          Skilled in React, Next.js, Node.js, TypeScript, and PostgreSQL. I
           balance frontend finesse with backend strength.
         </p>
       </div>

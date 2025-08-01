@@ -1,6 +1,6 @@
 "use client";
 import { skills } from "../common/data";
-import { motion, Reorder } from "framer-motion";
+import { Reorder } from "framer-motion";
 import { useState } from "react";
 
 export default function SkillWrapper() {
