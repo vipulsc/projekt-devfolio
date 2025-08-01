@@ -5,6 +5,7 @@ import ThemeProvider from "@/component/Theme/theme-context";
 import Script from "next/script";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -18,12 +19,12 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://vipulworks.com"),
   title: {
-    default: "Vipul Singh - Software Engineer",
-    template: "%s | Vipul Singh - Software Engineer",
+    default: "Vipul Singh - Full Stack Engineer",
+    template: "%s | Vipul Singh - Full Stack Engineer",
   },
   description:
-    "Vipul Singh is a passionate Full Stack Developer specializing in React, Next.js, Node.js, and modern web technologies.",
-  applicationName: "Vipul Works",
+    "I'm Vipul Singh, a Full Stack Engineer with expertise in React, Next.js, Node.js, and modern web technologies. I build scalable applications and create great user experiences. Available for new opportunities.",
+  applicationName: "Vipul Works - Portfolio",
   keywords: [
     "Full Stack Developer",
     "React Developer",
@@ -32,8 +33,28 @@ export const metadata: Metadata = {
     "JavaScript Developer",
     "TypeScript Developer",
     "Software Engineer",
+    "Web Developer",
+    "Frontend Developer",
+    "Backend Developer",
+    "MERN Stack Developer",
     "Vipul Singh",
     "vipulworks.com",
+    "Portfolio",
+    "Web Development",
+    "React.js",
+    "Next.js",
+    "Node.js",
+    "MongoDB",
+    "Express.js",
+    "API Development",
+    "Database Design",
+    "REST API",
+    "GraphQL",
+    "Redux",
+    "Tailwind CSS",
+    "Git",
+    "Docker",
+    "AWS",
   ],
   authors: [{ name: "Vipul Singh", url: "https://vipulworks.com" }],
   creator: "Vipul Singh",
@@ -45,15 +66,19 @@ export const metadata: Metadata = {
     telephone: false,
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: [
+      { url: "/icons/icon.png", sizes: "32x32", type: "image/png" },
+      { url: "/icons/icon.png", sizes: "192x192", type: "image/png" },
+      { url: "/icons/icon.png", sizes: "512x512", type: "image/png" },
+    ],
     shortcut: "/favicon.ico",
     apple: "/icons/icon.png",
   },
   manifest: "/manifest.json",
   openGraph: {
-    title: "Vipul Singh - Software Engineer",
+    title: "Vipul Singh - Full Stack Engineer",
     description:
-      "Vipul Singh is a passionate Full Stack Developer specializing in React, Next.js, Node.js, and modern web technologies.",
+      "I'm Vipul Singh, a Full Stack Engineer with expertise in React, Next.js, Node.js, and modern web technologies. I build scalable applications and create great user experiences. Available for new opportunities.",
     url: "https://vipulworks.com",
     siteName: "Vipul Works - Portfolio",
     images: [
@@ -70,9 +95,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Vipul Singh - Software Engineer",
+    title: "Vipul Singh - Full Stack Engineer",
     description:
-      "Vipul Singh is a passionate Full Stack Developer specializing in React, Next.js, Node.js, and modern web technologies.",
+      "I'm Vipul Singh, a Full Stack Engineer with expertise in React, Next.js, Node.js, and modern web technologies. I build scalable applications and create great user experiences. Available for new opportunities.",
     images: [
       "https://res.cloudinary.com/du9tf43gi/image/upload/v1753989030/banner_e9bnfs.png",
     ],
@@ -99,6 +124,8 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://vipulworks.com",
   },
+  category: "technology",
+  classification: "Portfolio Website",
 };
 
 export default function RootLayout({
@@ -115,7 +142,41 @@ export default function RootLayout({
         <meta name="geo.placename" content="India" />
         <meta name="geo.position" content="28.6139;77.2090" />
         <meta name="ICBM" content="28.6139, 77.2090" />
+        <meta name="theme-color" content="#8b5cf6" />
+        <meta name="msapplication-TileColor" content="#8b5cf6" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+        <meta name="apple-mobile-web-app-title" content="Vipul Singh" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="application-name" content="Vipul Works" />
+        <meta name="msapplication-TileImage" content="/icons/icon.png" />
+        <meta name="msapplication-config" content="/browserconfig.xml" />
+
+        {/* Additional SEO Meta Tags */}
+        <meta
+          name="robots"
+          content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        />
+        <meta name="googlebot" content="index, follow" />
+        <meta name="bingbot" content="index, follow" />
+        <meta name="revisit-after" content="7 days" />
+        <meta name="rating" content="general" />
+        <meta name="distribution" content="global" />
+        <meta name="coverage" content="worldwide" />
+        <meta name="target" content="all" />
+        <meta name="HandheldFriendly" content="true" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="format-detection" content="date=no" />
+        <meta name="format-detection" content="address=no" />
+        <meta name="format-detection" content="email=no" />
+
         <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link
+          rel="icon"
+          href="/icons/icon.png"
+          type="image/png"
+          sizes="32x32"
+        />
         <link rel="apple-touch-icon" href="/icons/icon.png" />
 
         {/* Structured Data for Person */}
@@ -132,9 +193,9 @@ export default function RootLayout({
                 "https://linkedin.com/in/vipulsingh14",
                 "https://twitter.com/vipulsc1",
               ],
-              jobTitle: "Full Stack Developer",
+              jobTitle: "Full Stack Engineer",
               description:
-                "Passionate Full Stack Developer specializing in React, Next.js, Node.js, and modern web technologies",
+                "Full Stack Engineer with expertise in React, Next.js, Node.js, and modern web technologies. I build scalable applications and create great user experiences.",
               knowsAbout: [
                 "React.js",
                 "Next.js",
@@ -156,6 +217,19 @@ export default function RootLayout({
                 "Docker",
                 "AWS",
               ],
+              worksFor: {
+                "@type": "Organization",
+                name: "Freelance",
+              },
+              alumniOf: {
+                "@type": "Organization",
+                name: "Self-Taught Developer",
+              },
+              address: {
+                "@type": "PostalAddress",
+                addressCountry: "IN",
+                addressRegion: "India",
+              },
             }),
           }}
         />
@@ -170,7 +244,7 @@ export default function RootLayout({
               name: "Vipul Works - Portfolio",
               url: "https://vipulworks.com",
               description:
-                "Portfolio website of Vipul Singh - Full Stack Developer",
+                "My portfolio showcasing expertise in React, Next.js, Node.js, and modern web technologies. I build scalable applications and create great user experiences.",
               author: {
                 "@type": "Person",
                 name: "Vipul Singh",
@@ -180,6 +254,130 @@ export default function RootLayout({
                 target: "https://vipulworks.com/search?q={search_term_string}",
                 "query-input": "required name=search_term_string",
               },
+              publisher: {
+                "@type": "Person",
+                name: "Vipul Singh",
+              },
+            }),
+          }}
+        />
+
+        {/* Structured Data for Organization */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "Vipul Works",
+              url: "https://vipulworks.com",
+              logo: "https://vipulworks.com/icons/icon.png",
+              description: "Full Stack Development Services",
+              founder: {
+                "@type": "Person",
+                name: "Vipul Singh",
+              },
+              contactPoint: {
+                "@type": "ContactPoint",
+                contactType: "customer service",
+                email: "vipul@vipulworks.com",
+              },
+            }),
+          }}
+        />
+
+        {/* Structured Data for CreativeWork (Portfolio) */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "CreativeWork",
+              name: "Vipul Singh Portfolio",
+              description:
+                "My portfolio showcasing React, Next.js, Node.js, and modern web development skills with a track record of building scalable applications",
+              author: {
+                "@type": "Person",
+                name: "Vipul Singh",
+                jobTitle: "Full Stack Engineer",
+                knowsAbout: [
+                  "React.js",
+                  "Next.js",
+                  "Node.js",
+                  "JavaScript",
+                  "TypeScript",
+                  "MongoDB",
+                  "Express.js",
+                  "Web Development",
+                  "Full Stack Development",
+                  "MERN Stack",
+                ],
+              },
+              creator: {
+                "@type": "Person",
+                name: "Vipul Singh",
+              },
+              dateCreated: "2025-08-01",
+              dateModified: "2025-08-01",
+              genre: "Portfolio",
+              keywords:
+                "Full Stack Developer, React, Next.js, Node.js, Web Development, Portfolio",
+              url: "https://vipulworks.com",
+              image:
+                "https://res.cloudinary.com/du9tf43gi/image/upload/v1753989030/banner_e9bnfs.png",
+              thumbnailUrl: "https://vipulworks.com/icons/icon.png",
+              inLanguage: "en-US",
+              isAccessibleForFree: true,
+              license: "https://creativecommons.org/licenses/by/4.0/",
+            }),
+          }}
+        />
+
+        {/* Structured Data for BreadcrumbList */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                {
+                  "@type": "ListItem",
+                  position: 1,
+                  name: "Home",
+                  item: "https://vipulworks.com",
+                },
+                {
+                  "@type": "ListItem",
+                  position: 2,
+                  name: "About",
+                  item: "https://vipulworks.com/#about",
+                },
+                {
+                  "@type": "ListItem",
+                  position: 3,
+                  name: "Projects",
+                  item: "https://vipulworks.com/#projects",
+                },
+                {
+                  "@type": "ListItem",
+                  position: 4,
+                  name: "Skills",
+                  item: "https://vipulworks.com/#skills",
+                },
+                {
+                  "@type": "ListItem",
+                  position: 5,
+                  name: "Experience",
+                  item: "https://vipulworks.com/#experience",
+                },
+                {
+                  "@type": "ListItem",
+                  position: 6,
+                  name: "Contact",
+                  item: "https://vipulworks.com/#contact",
+                },
+              ],
             }),
           }}
         />

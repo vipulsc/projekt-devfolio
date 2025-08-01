@@ -1,4 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
+import { NextResponse } from "next/server";
+
+export async function GET() {
+  const baseUrl = "https://vipulworks.com";
+  const currentDate = "2025-08-01";
+
+  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
@@ -6,8 +12,8 @@
   
   <!-- Homepage -->
   <url>
-    <loc>https://vipulworks.com/</loc>
-    <lastmod>2025-08-01</lastmod>
+    <loc>${baseUrl}/</loc>
+    <lastmod>${currentDate}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -20,66 +26,74 @@
 
   <!-- About Section -->
   <url>
-    <loc>https://vipulworks.com/#about</loc>
-    <lastmod>2025-08-01</lastmod>
+    <loc>${baseUrl}/#about</loc>
+    <lastmod>${currentDate}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <!-- Projects Section -->
   <url>
-    <loc>https://vipulworks.com/#projects</loc>
-    <lastmod>2025-08-01</lastmod>
+    <loc>${baseUrl}/#projects</loc>
+    <lastmod>${currentDate}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <!-- Skills Section -->
   <url>
-    <loc>https://vipulworks.com/#skills</loc>
-    <lastmod>2025-08-01</lastmod>
+    <loc>${baseUrl}/#skills</loc>
+    <lastmod>${currentDate}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <!-- Experience Section -->
   <url>
-    <loc>https://vipulworks.com/#experience</loc>
-    <lastmod>2025-08-01</lastmod>
+    <loc>${baseUrl}/#experience</loc>
+    <lastmod>${currentDate}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <!-- Contact Section -->
   <url>
-    <loc>https://vipulworks.com/#contact</loc>
-    <lastmod>2025-08-01</lastmod>
+    <loc>${baseUrl}/#contact</loc>
+    <lastmod>${currentDate}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <!-- Resume Download -->
   <url>
-    <loc>https://vipulworks.com/vipulsc.pdf</loc>
-    <lastmod>2025-08-01</lastmod>
+    <loc>${baseUrl}/vipulsc.pdf</loc>
+    <lastmod>${currentDate}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
 
-  <!-- Services Page (if exists) -->
+  <!-- Services Page -->
   <url>
-    <loc>https://vipulworks.com/#services</loc>
-    <lastmod>2025-08-01</lastmod>
+    <loc>${baseUrl}/#services</loc>
+    <lastmod>${currentDate}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- Portfolio Page (if exists) -->
+  <!-- Portfolio Page -->
   <url>
-    <loc>https://vipulworks.com/#portfolio</loc>
-    <lastmod>2025-08-01</lastmod>
+    <loc>${baseUrl}/#portfolio</loc>
+    <lastmod>${currentDate}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
-</urlset> 
+</urlset>`;
+
+  return new NextResponse(sitemap, {
+    headers: {
+      "Content-Type": "application/xml",
+      "Cache-Control": "public, max-age=3600, s-maxage=3600",
+    },
+  });
+}

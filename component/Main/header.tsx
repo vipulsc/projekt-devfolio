@@ -10,7 +10,10 @@ export default function HeaderMain() {
 
   return (
     <>
-      <div className="flex flex-col justify-start items-start ">
+      <div
+        className="flex flex-col justify-start items-start "
+        suppressHydrationWarning
+      >
         <motion.div className="flex flex-row items-center gap-4">
           <AnimatePresence mode="wait">
             <motion.div
@@ -22,6 +25,8 @@ export default function HeaderMain() {
                 alt="vipul"
                 width={130}
                 height={130}
+                priority
+                suppressHydrationWarning
                 className="rounded-xl border-1 border-[var(--navbar-border)]"
               />
             </motion.div>

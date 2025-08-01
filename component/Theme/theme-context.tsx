@@ -14,8 +14,10 @@ export default function ThemeProvider({
   children: React.ReactNode;
 }) {
   const [isLight, setIsLight] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    setMounted(true);
     const currentTheme = localStorage.getItem("theme");
     const root = document.documentElement;
 
@@ -44,7 +46,9 @@ export default function ThemeProvider({
   };
 
   return (
-    <ThemeContext.Provider value={{ isLight, toggleTheme }}>
+    <ThemeContext.Provider
+      value={{ isLight: mounted ? isLight : false, toggleTheme }}
+    >
       {children}
     </ThemeContext.Provider>
   );

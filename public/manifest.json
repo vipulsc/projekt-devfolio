@@ -1,15 +1,27 @@
 {
-  "name": "Vipul Singh - Software Engineer",
+  "name": "Vipul Singh - Full Stack Engineer",
   "short_name": "Vipul Singh",
+  "description": "I'm Vipul Singh, a Full Stack Engineer specializing in React, Next.js, Node.js, and modern web technologies.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#000000",
-  "theme_color": "#000000",
+  "theme_color": "#8b5cf6",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en",
+  "categories": ["productivity", "business", "developer tools"],
   "icons": [
     {
       "src": "/icons/icon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ]
 }
