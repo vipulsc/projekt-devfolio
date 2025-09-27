@@ -79,12 +79,20 @@ type Project = {
 };
 
 export const project: Project[] = [
+  // {
+  //   image: "/Projects/pathblaze.png",
+  //   title: "Projekt Pathblaze",
+  //   description:
+  //     "PathBlaze is a guided learning platform with step-by-step roadmaps, curated videos, smart progress tracking, short-form content, and community. ",
+  //   live: "https://pathblaze.in",
+  //   underDevelopment: true,
+  // },
   {
-    image: "/Projects/pathblaze.png",
-    title: "Projekt Pathblaze",
+    image: "/Projects/prismora.png",
+    title: "Projekt Prismora",
     description:
-      "PathBlaze is a guided learning platform with step-by-step roadmaps, curated videos, smart progress tracking, short-form content, and community. ",
-    live: "https://pathblaze.in",
+      "Prismora is a creative space where design, components, and flow come together to craft seamless digital experiences.",
+    live: "",
     underDevelopment: true,
   },
   {
